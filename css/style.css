@@ -1,0 +1,179 @@
+/*按鈕列*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Century Gothic", "微軟正黑體", ARIAL;
+    background-color: #fcfcfc;
+}
+
+#gotop {
+    display: none;
+    position: fixed;
+    border-radius: 10px;
+    right: 20px;
+    bottom: 30px;
+    padding: 10px 16px;
+    font-size: 25px;
+    background: #0065A2;
+    color: #FAFCFD;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.navbar-o {
+    box-shadow: 0 2px 2px #ccc;
+    border-top: 15px solid #0065A2;
+    padding: 20px 10px 20px 10px;
+    background-color: #fff;
+    
+}
+
+.nav-active {
+    border-bottom: 5px solid #0065A2;
+    color: #0065A2 !important;
+}
+
+.btn-blue {
+    background-color: #0065A2;
+    color: #fff;
+}
+
+
+/*index*/
+
+.slogan {
+    height: 195px;
+    background-color: #0065A2;
+    background-image: url(../images/bg.jpg);
+    padding-top: 30px;
+    color: #fff;
+}
+
+.menu-btn {
+    background-color: #fff;
+    padding: 10px;
+    color: #0065A2;
+    width: 150px;
+}
+
+
+/*store*/
+
+.store {
+    background-image: url(../images/store.jpg);
+    height: 200px;
+    padding: 50px;
+    color: #fff;
+}
+
+.t {
+    background-image: url(../images/t.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100px;
+}
+
+.b {
+    background-image: url(../images/b.png);
+    background-repeat: no-repeat;
+    height: 100px;
+}
+
+.area {
+    background-image: url(../images/b-line.png);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.area span {
+    font-size: 30px;
+    background-color: #fcfcfc;
+    padding: 10px;
+}
+
+.store-name,
+{
+    color: #0065A2;
+    font-size: 24px;
+}
+
+
+/*news*/
+
+.news-t {
+    color: #0065A2;
+    font-size: 20px;
+}
+
+.badge-seven {
+    color: #fff;
+    background-color: #0065A2;
+}
+
+
+/*contact*/
+
+.contact-name {
+    color: #0065A2;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.close-b{
+	background-color: #0065A2;
+	width: 70px;
+	height: 70px;
+	display: block;
+	font-size: 40px;
+	color: #fff;
+	line-height: 1.5em;
+}
+
+/*product*/
+
+.thead-blue{
+	background-color: #0065A2;
+	color: #fff;
+}
+
+.product a{
+	color: #333;
+}
+
+/*footer*/
+
+footer {
+    height: 350px;
+    background-color: #333;
+    color: #fff;
+}
+
+.facebook {
+    background-image: url(../images/community.png);
+    display: block;
+    float: left;
+    height: 44px;
+    width: 43px;
+}
+
+.instagram {
+    background-image: url(../images/community.png);
+    background-position-x: 109px;
+    display: block;
+    float: left;
+    height: 44px;
+    width: 54px;
+}
+
+.line {
+    background-image: url(../images/community.png);
+    background-position-x: 55px;
+    display: block;
+    float: left;
+    height: 44px;
+    width: 55px;
+}

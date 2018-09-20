@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>七盞茶 ‧ 台灣製造的好茶 ‧ 商品介紹</title>
+    <!--BootstrapCDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scrolltop.js"></script>
+    <script>
+    //nav特效
+    $(function() {
+        $(window).load(function() {
+            $(window).bind('scroll resize', function() {
+                var $this = $(this);
+                var $this_Top = $this.scrollTop();
+
+                //當高度小於100時，關閉區塊    
+                if ($this_Top < 100) {
+                    $('#navbar').stop().animate({
+                        top: "0px"
+                    });
+                }
+                if ($this_Top > 100) {
+                    $('#navbar').stop().animate({
+                        top: "-20px"
+                    });
+
+                }
+            }).scroll();
+        });
+    });
+    </script>
+    <style>
+    .blank {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, .9);
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="gotop">˄</div>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-o" id="navbar">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="七盞茶"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            </ul>
+            <ul class="navbar-nav nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="store.html">門市查詢</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-active" href="product.html">商品介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">關於我們</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">聯絡我們</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">最新消息</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="store">
+        <h1>商品介紹</h1>
+        <span>HOME / PRODUCT LIST</span>
+    </div>
+    <div class="main">
+        <div class="t"></div>
+        <div class="content product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-3 text-right">
+                        <span class="badge badge-pill badge-danger">熱</span> 可做熱飲
+                        <span class="badge badge-pill badge-primary">★</span> 推薦商品
+                    </div>
+                    <div class="col-md-4">
+                        <table class="table text-center">
+                            <thead class="thead-blue">
+                                <tr>
+                                    <th scope="col">七時韻</th>
+                                    <th scope="col">M</th>
+                                    <th scope="col">L</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><a href="#" data-toggle="modal" data-target="#exampleModalCenter">香芋珍露</a></th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>杯中春秋</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4">
+                        <table class="table text-center">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">七盞茗茶</th>
+                                    <th scope="col">M</th>
+                                    <th scope="col">L</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><span class="badge badge-pill badge-primary">★</span> 幽蘭青茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>綠茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>烏龍茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>紅茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>青茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4">
+                        <table class="table text-center">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">香醇回味</th>
+                                    <th scope="col">M</th>
+                                    <th scope="col">L</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>白玉奶紅</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>仙草奶凍</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>吾奶三皇</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>七盞奶茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>純黑可可</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>流金烏奶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>七盞奶綠</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4">
+                        <table class="table text-center">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">茶香果味</th>
+                                    <th scope="col">M</th>
+                                    <th scope="col">L</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">鮮美碩果入茶，每口都是味覺覺醒!</td>
+                                </tr>
+                                <tr>
+                                    <th>古早冬瓜</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>冬瓜檸檬</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>鳳梨冰茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>青檸檬綠</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>百香橙綠</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>柚密青茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4">
+                        <table class="table text-center">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">風味多多</th>
+                                    <th scope="col">M</th>
+                                    <th scope="col">L</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">鮮美碩果入茶，每口都是味覺覺醒!</td>
+                                </tr>
+                                <tr>
+                                    <th>綠茶多多</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>柳橙多多</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>葡萄柚多多</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4">
+                        <table class="table text-center">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">拿帖茶風</th>
+                                    <th scope="col">M</th>
+                                    <th scope="col">L</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">鮮美碩果入茶，每口都是味覺覺醒!</td>
+                                </tr>
+                                <tr>
+                                    <th>拿帖靜岡抹茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>拿帖墨華</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>拿帖冬瓜</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>拿帖香芒</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4">
+                        <table class="table text-center">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">春夏秋冬</th>
+                                    <th scope="col">M</th>
+                                    <th scope="col">L</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">鮮美碩果入茶，每口都是味覺覺醒!</td>
+                                </tr>
+                                <tr>
+                                    <th>拿帖香芒</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>夏日香芒冰沙</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>蜂蜜菊花茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>五穀養身飲</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>黑糖薑母茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>紅棗桂圓茶</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4">
+                        <table class="table text-center">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">加料</th>
+                                    <th scope="col">M</th>
+                                    <th scope="col">L</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>香芋珍珠</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>幽蘭珍珠</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>蜂蜜菊花茶
+                                    </th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <th>五穀養身飲</th>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="b"></div>
+        </div>
+        <footer class="p-5">
+            <div class="col-md-12 text-center">
+                <img src="images/taiwnamade.png" alt="七盞茶-台灣製造" class="mb-3">
+                <p>電話 : 886-4-2389-6909 / 傳真 : 886-4-23894277 / 加盟專線 : 0800-800533</p>
+                <p>地址 : 台中市南屯區龍富路三段565號2樓之1</p>
+                <p class="mb-3"><img src="images/w-line.png" alt="分隔線"></p>
+                <p class="community mb-3" style="display:inline-block;">
+                    <a href="https://www.facebook.com/taiwan.se7entea/" class="facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/taiwan.seventea/" class="instagram" target="_blank"></a>
+                    <a href="https://line.me/R/ti/p/%40seo6929j" class="line" target="_blank"></a>
+                </p>
+                <p>© Copyright 2018 - SEVEN TEA</p>
+            </div>
+        </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="text-right">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="close-b">X</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/product/0019.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="col-md-12 border-bottom py-3">
+                                    <span class="h1">香芋珍露</span>
+                                    <span class="text-secondary"> / 七時韻</span>
+                                </div>
+                                <div class="col-md-12 border-bottom py-3">
+                                    不加任何果糖、奶精，在最佳時間內萃取精華，口感飽和濃郁中帶有 回甘香氣。
+                                </div>
+                                <div class="col-md-12 py-3">
+                                    <h4 class="text-danger">溫馨提示</h4>
+                                    <ul>
+                                        <li>產品圖片僅供參考，實際產品以各門市販售為準。</li>
+                                        <li>本產品可做溫、熱飲，熱飲請小心燙口。</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12 text-right">
+                                    <span class="badge badge-pill badge-danger">熱</span> 可做熱飲
+                                    <span class="badge badge-pill badge-primary">★</span> 推薦商品
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ba05d51d4bf8a78"></script>
+</body>
+
+</html>

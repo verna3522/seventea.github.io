@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>七盞茶 ‧ 台灣製造的好茶 ‧ 聯絡我們</title>
+    <!--BootstrapCDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scrolltop.js"></script>
+    <script>
+    //nav特效
+    $(function() {
+        $(window).load(function() {
+            $(window).bind('scroll resize', function() {
+                var $this = $(this);
+                var $this_Top = $this.scrollTop();
+
+                //當高度小於100時，關閉區塊    
+                if ($this_Top < 100) {
+                    $('#navbar').stop().animate({
+                        top: "0px"
+                    });
+                }
+                if ($this_Top > 100) {
+                    $('#navbar').stop().animate({
+                        top: "-20px"
+                    });
+
+                }
+            }).scroll();
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="gotop">˄</div>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-o" id="navbar">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="七盞茶"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            </ul>
+            <ul class="navbar-nav nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="store.html">門市查詢</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">商品介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">關於我們</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-active" href="contact.html">聯絡我們</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">最新消息</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="store">
+        <h1>聯絡我們</h1>
+        <span>HOME / CONTACT</span>
+    </div>
+    <div class="main">
+        <div class="t"></div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="contact-name mb-3">KEEP IN TOUCH</p>
+                        <ul>
+                            <li>歡迎留下您的寶貴意見，我們竭誠為您服務</li>
+                            <li>本公司客服人員將於上班時間，週一至週五 AM09:00～PM17:00 為您做回覆</li>
+                            <li>若於下班時間提出問題則需至次上班時間方能為您提供服務。</li>
+                        </ul>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="form-name">姓名</label>
+                                    <input type="text" class="form-control" id="form-name" placeholder="請輸入真實姓名">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="form-gender">性別</label>
+                                    <select id="form-gender" class="form-control">
+                                        <option selected>請選擇性別</option>
+                                        <option>先生</option>
+                                        <option>女生</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="form-phone">電話</label>
+                                    <input type="email" class="form-control" id="form-phone" placeholder="請輸入電話號碼">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="form-email">信箱</label>
+                                    <input type="text" class="form-control" id="form-email" placeholder="請輸入電子信箱">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="form-topic">主題</label>
+                                    <select id="form-topic" class="form-control">
+                                        <option selected>請選擇主題</option>
+                                        <option>飲品建議</option>
+                                        <option>手機APP相關</option>
+                                        <option>其他建議</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-content">內容</label>
+                                <textarea class="form-control" id="form-content" rows="3" placeholder="請輸入您想要告訴七盞茶的建議回饋"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-blue btn-block">確定送出</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b"></div>
+    </div>
+    <footer class="p-5">
+        <div class="col-md-12 text-center">
+            <img src="images/taiwnamade.png" alt="七盞茶-台灣製造" class="mb-3">
+            <p>電話 : 886-4-2389-6909 / 傳真 : 886-4-23894277 / 加盟專線 : 0800-800533</p>
+            <p>地址 : 台中市南屯區龍富路三段565號2樓之1</p>
+            <p class="mb-3"><img src="images/w-line.png" alt="分隔線"></p>
+            <p class="community mb-3" style="display:inline-block;">
+                <a href="https://www.facebook.com/taiwan.se7entea/" class="facebook" target="_blank"></a>
+                <a href="https://www.instagram.com/taiwan.seventea/" class="instagram" target="_blank"></a>
+                <a href="https://line.me/R/ti/p/%40seo6929j" class="line" target="_blank"></a>
+            </p>
+            <p>© Copyright 2018 - SEVEN TEA</p>
+        </div>
+    </footer>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ba05d51d4bf8a78"></script>
+</body>
+
+</html>
