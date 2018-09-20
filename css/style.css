@@ -42,6 +42,15 @@ body {
     color: #fff;
 }
 
+    .blank {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, .9);
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
 
 /*index*/
 
@@ -128,6 +137,15 @@ body {
 	width: 70px;
 	height: 70px;
 	display: block;
+	font-size: 40px;
+	color: #fff;
+	line-height: 1.5em;
+}
+
+.close-bt{
+	background-color: #fff;
+	width: 70px;
+	height: 70px;
 	font-size: 40px;
 	color: #fff;
 	line-height: 1.5em;
