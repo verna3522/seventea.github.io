@@ -152,6 +152,10 @@ footer {
     color: #fff;
 }
 
+footer a{
+	color: #fff;
+}
+
 .facebook {
     background-image: url(../images/community.png);
     display: block;
