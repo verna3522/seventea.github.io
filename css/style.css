@@ -29,7 +29,6 @@ body {
     border-top: 15px solid #0065A2;
     padding: 20px 10px 20px 10px;
     background-color: #fff;
-    
 }
 
 .nav-active {
@@ -42,15 +41,16 @@ body {
     color: #fff;
 }
 
-    .blank {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: rgba(0, 0, 0, .9);
-        top: 0;
-        left: 0;
-        z-index: 100;
-    }
+.blank {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .9);
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
 
 /*index*/
 
@@ -132,46 +132,47 @@ body {
     font-weight: bold;
 }
 
-.close-b{
-	background-color: #0065A2;
-	width: 70px;
-	height: 70px;
-	display: block;
-	font-size: 40px;
-	color: #fff;
-	line-height: 1.5em;
+.close-b {
+    background-color: #0065A2;
+    width: 70px;
+    height: 70px;
+    display: block;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.5em;
 }
 
-.close-bt{
-	background-color: #fff;
-	width: 70px;
-	height: 70px;
-	font-size: 40px;
-	color: #fff;
-	line-height: 1.5em;
+.close-bt {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.5em;
 }
+
 
 /*product*/
 
-.thead-blue{
-	background-color: #0065A2;
-	color: #fff;
+.thead-blue {
+    background-color: #0065A2;
+    color: #fff;
 }
 
-.product a{
-	color: #333;
+.product a {
+    color: #333;
 }
+
 
 /*footer*/
 
 footer {
-    height: 350px;
     background-color: #333;
     color: #fff;
 }
 
-footer a{
-	color: #fff;
+footer a {
+    color: #fff;
 }
 
 .facebook {
